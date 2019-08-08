@@ -87,6 +87,7 @@ a{
 
 .between-sec{
     padding: 20rem 0;
+    text-align: center;
 
 }
 
@@ -315,6 +316,7 @@ a{
 
 .gallery__img{
     width: 100%;
+    height: 40rem;
 }
 
 
@@ -374,5 +376,47 @@ textarea{
     text-transform: uppercase;
     margin-bottom: 1rem;
     color: var(--main-font-color);
+
+}
+
+/* Media queries */
+
+@media screen and (min-width: 783px){
+    .main-header,
+    .between-sec{
+        background-attachment: fixed;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .main-navbar{
+        display: flex;
+        padding: 2rem 10rem 0;
+        justify-content: space-between;
+    }
+
+    .overlay{
+        position: initial;
+        background: none;
+        opacity: initial;
+        transform: initial;
+    }
+
+    .main-navbar__list{
+        flex-direction: row;
+        list-style: none;
+        margin-top: .2rem;
+        
+    }
+
+    .main-navbar__link{
+        font-size: 2.4rem;
+        letter-spacing: .1rem;
+        padding: 0 2rem;
+    }
+
+    
 
 }
