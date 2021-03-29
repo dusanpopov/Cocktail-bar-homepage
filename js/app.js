@@ -2,12 +2,12 @@ const hamburgerMenu = document.querySelector(".hamburger-menu");
 const overlay = document.querySelector(".overlay");
 const mainNavbarLink = document.querySelector(".main-navbar__link");
 
-function toggleHamburgerMenu(){
+const toggleHamburgerMenu = () => {
     hamburgerMenu.classList.toggle("active");
     overlay.classList.toggle("menu-open");
 }
 
-function navbarClassRemove(){
+const navbarClassRemove = () =>{
     hamburgerMenu.classList.remove("active");
     overlay.classList.remove("menu-open");
 }
